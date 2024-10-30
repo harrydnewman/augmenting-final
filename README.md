@@ -13,8 +13,10 @@
 ### adding a remote
 <!-- explain the remote -->
 
-### keeping your repo up to date
-** Before making any changes, first run: **
+### Pulling (Keeping your repo up to date)
+
+**Before making any changes, first run:**
+
 ``git pull origin main``
 
 Pulling ensures you’re working with the latest code and reduces the risk of conflicts later when merging.
@@ -28,8 +30,10 @@ Branches are usually named after the feature, bug, or task (e.g., feature-login,
 
 You must commit all changes before switching between branches!
 
-**Tip: **
+**Tip:**
 If you want to see all your branches, run:
+
+
 ``git branch``
 
 ### Committing 
@@ -45,24 +49,41 @@ Then, commit the changes with a message:
 
 ``git commit -m "Description of changes"``
 
-**Pushing changes**
+### Pushing
 
 Pushing your changes to the **Remote** allows your commits to be backed up online. This will also allow your teammate to see your changes.
+
 **I suggest pushing each time you commit, but at the very least it should be done when you are done with your work for the day.**
 
-**To Commit:**
+**To Push:**
+
+First **commit** then:
 
 ``git push origin <branch-name>``
 
 ### Pull Requests (PR)
 
-On github.com, navigate to your repository, and you’ll see an option to create a Pull Request for your branch.
+A pull request is a way to propose merging your changes into another branch so others can review and approve them before they become part of the main project.
+
+**To Pull:**
+
+On github.com, navigate to your repository, and you'll see an option to create a *Pull Request* for your branch.
+(If you dont see this, **RELOAD**)
 
 PRs let you and your teammate review the code changes before merging them into the main branch.
 
 The other person can comment on, review, or even add commits to your branch if changes are needed.
 
 ### Merging
+
+Once the Pull Request is reviewed and approved, you can merge it into the main branch on GitHub:
+
+If working on GitHub, click the Merge button on the PR page.
+
+**MAKE SURE TO INFORM YOUR TEAMMATES EACH TIME YOU MERGE, YOU ALL MUST CREATE A PULL REQUEST**
+
+**Note:** Make sure to pull the latest changes after merging to keep your local branch up to date.
+``git pull origin <branch>``
 
 **Forcing a merge**
 
@@ -71,7 +92,6 @@ Sometimes when attempting a merge on github.com for one reason or another it won
 This is when you might want to **force** a branch merge. This approach is often used to make one branch identical to another. 
 
 Suppose you want your branch **feature-branch** to replace the **main** branch.
-
 
 To force a branch merge, follow these steps carefully, as this can potentially overwrite changes on the target branch. Only do this if you’re confident no crucial data will be lost. 
 This approach is to forcefully merge the changes from one branch into another locally, resolving conflicts by preferring one branch over the other.
