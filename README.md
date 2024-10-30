@@ -14,6 +14,8 @@ should end up looking something like:
 
 ``git clone https://github.com/harrydnewman/augmenting-final.git``
 
+## Instructions
+
 ### New project
 
 To create a new github project, open your terminal and run:
@@ -22,6 +24,10 @@ To create a new github project, open your terminal and run:
 
 I would suggest setting up your coding project **before** initializing github
 
+
+
+
+
 **.gitignore**
 
 Locate the .gitignore file in your directory, open it, and ensure it includes the following entries:
@@ -29,13 +35,17 @@ Locate the .gitignore file in your directory, open it, and ensure it includes th
 ``node_modules
 .DS_Store``
 
-*Note:** If you don't see a .gitignore file, simply create a new file, name it .gitignore and add the above to the file.
+**Note:** If you don't see a .gitignore file, simply create a new file, name it .gitignore and add the above to the file.
+
+**README.md**
 
 Then create a file named **README.md**
 
 open the file and type:
 
 ``# <Project Name>``
+
+Then save.
 
 ### Setting up a new project on github.com
 
@@ -45,17 +55,17 @@ navigate to github.com, log into your account and visit your repositories page.
 
 Create a new repository with the following settings:
 
-``**Name:** <project-name>
-**Description:** whatever you want, totally optional
-**Visibility** public (just to make your life easier)
-**Add a README file:** NO (DO NOT CHECK THE BOX)
-**Add .gitignore:** NO (.gitignore template: None)
-**License:** None``
+``**Name:** <project-name>``
+``**Description:** whatever you want, totally optional``
+``**Visibility** public (just to make your life easier)``
+``**Add a README file:** NO (DO NOT CHECK THE BOX)``
+``**Add .gitignore:** NO (.gitignore template: None)``
+``**License:** None``
 
 **Note:** 
-These settings change based on what types of projects/coding languages you're working with. However, when working with Vite the .gitignore file is already created for you, which is why we leave these fields blank (also its more steps if you check these boxes lol)
+These settings change based on what types of projects/coding languages you're working with. However, when working with Vite the .gitignore file is already created for you, which is why we leave these fields blank.
 
-If you've followed these steps correctly, you should see a page that says **Quick setup — if you’ve done this kind of thing before**
+If you've followed these steps correctly, you should see a page that says: **Quick setup — if you’ve done this kind of thing before**
 
 ### Adding a remote
 
@@ -65,7 +75,7 @@ After setting up your project on github, reopen your terminal and type:
 
 ``git remote add origin https://github.com/<your-username>/<your-repository-name>.git``
 
-To double check that the remote has been set up properly:
+To double check that the remote has been set up properly type:
 
 ``git remote -v``
 
@@ -78,10 +88,8 @@ origin  https://github.com/harrydnewman/augmenting-final.git (push)``
 
 **Pushing local repo to remote**
 
-**Note:** This is how I do it but its not the way github instructs you to do it, but it works all the same
-
 ``git checkout -b main``
-*switches to the main branch*
+*creates the main branch*
 
 ``git add .``
 
