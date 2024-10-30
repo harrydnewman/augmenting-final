@@ -116,7 +116,9 @@ Once the person accepts this invite, they should create a new **EMPTY** folder o
 If this is successful, then run:
 
 ``cd <project-name>``
+
 ``npm install``
+
 ``npm run dev``
 
 If the website says that its running on local host, you have cloned successfully!
@@ -217,24 +219,32 @@ This approach is to forcefully merge the changes from one branch into another lo
 
 ***BACK UP MAIN BRANCH TO GITHUB BEFORE CONTINUING***
 ``git add .``
+
 ``git commit -m "Backup branch commit message``
+
 ``git push origin <branch-backup-name>``
 
 **Switch back to main branch to continue the merge: **
+
 ``git checkout main``
 
 **Force merge the branch (in our case: *feature-branch*) into main, ignoring conflicts:**
+
 ``git merge -s ours feature-branch``
+
 The ``-s ours`` strategy tells Git to keep the target branch’s (*main*) history but overwrite its content with *feature-branch*.
 
 **Push the merged changes to the remote:**
+
 ``git push origin main``
 
 **If pushing to the remote fails:**
+
 ``git push origin main --force``
 
 **Warnings**
 Force pushes and reset operations **override** remote history, affecting anyone else pulling from the repository.
+
 Always communicate with your team before forcing a merge to avoid confusion or data loss.
 
 **Once youve merged a branch successfully and everything is running as expected, feel free to delete the old branch to keep your working space clean and organized**
