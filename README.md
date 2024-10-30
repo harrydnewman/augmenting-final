@@ -234,9 +234,15 @@ This approach is to forcefully merge the changes from one branch into another lo
 
 **Force merge the branch (in our case: *feature-branch*) into main, ignoring conflicts:**
 
-``git merge -s ours feature-branch``
+``git merge -X theirs feature-branch``
 
-The ``-s ours`` strategy tells Git to keep the target branch’s (*main*) history but overwrite its content with *feature-branch*.
+The ``-X theirs`` strategy merges the branches, keeping non-conflicting changes, but resolves conflicts by favoring feature-branch.
+
+This is going to open a weird menu, to keep going hit the ``esc`` key and type:
+
+``:wq`` and press ``enter`` to save the commit message.
+
+To exit out of this menu, press the ``esc`` key and type ``:q!`` and then press ``enter``
 
 **Push the merged changes to the remote:**
 
