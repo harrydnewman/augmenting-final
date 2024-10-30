@@ -226,10 +226,6 @@ This approach is to forcefully merge the changes from one branch into another lo
 
 ***BACK UP MAIN BRANCH TO GITHUB BEFORE CONTINUING***
 
-``git add .``
-
-``git commit -m "Backup branch commit message``
-
 ``git push origin <branch-backup-name>``
 
 **Switch back to main branch to continue the merge:**
