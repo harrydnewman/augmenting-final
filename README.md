@@ -55,12 +55,17 @@ navigate to github.com, log into your account and visit your repositories page.
 
 Create a new repository with the following settings:
 
-``**Name:** <project-name>``
-``**Description:** whatever you want, totally optional``
-``**Visibility** public (just to make your life easier)``
-``**Add a README file:** NO (DO NOT CHECK THE BOX)``
-``**Add .gitignore:** NO (.gitignore template: None)``
-``**License:** None``
+``Name: <project-name>``
+
+``Description: whatever you want, totally optional``
+
+``Visibility: public (just to make your life easier)``
+
+``Add a README file: NO (DO NOT CHECK THE BOX)``
+
+``Add .gitignore: NO (.gitignore template: None)``
+
+``License: None``
 
 **Note:** 
 These settings change based on what types of projects/coding languages you're working with. However, when working with Vite the .gitignore file is already created for you, which is why we leave these fields blank.
@@ -83,8 +88,9 @@ If **NOTHING** prints, the remote has **NOT** been set up correctly
 
 expected output should look something like this:
 
-``origin  https://github.com/harrydnewman/augmenting-final.git (fetch)
-origin  https://github.com/harrydnewman/augmenting-final.git (push)``
+``origin  https://github.com/harrydnewman/augmenting-final.git (fetch)``
+
+``origin  https://github.com/harrydnewman/augmenting-final.git (push)``
 
 **Pushing local repo to remote**
 
@@ -181,6 +187,7 @@ A pull request is a way to propose merging your changes into another branch so o
 **To Pull:**
 
 On github.com, navigate to your repository, and you'll see an option to create a *Pull Request* for your branch.
+
 (If you dont see this, **RELOAD**)
 
 PRs let you and your teammate review the code changes before merging them into the main branch.
@@ -221,13 +228,14 @@ This approach is to forcefully merge the changes from one branch into another lo
 *this will switch you to the backup branch*
 
 ***BACK UP MAIN BRANCH TO GITHUB BEFORE CONTINUING***
+
 ``git add .``
 
 ``git commit -m "Backup branch commit message``
 
 ``git push origin <branch-backup-name>``
 
-**Switch back to main branch to continue the merge: **
+**Switch back to main branch to continue the merge:**
 
 ``git checkout main``
 
