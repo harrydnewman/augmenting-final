@@ -25,9 +25,6 @@ To create a new github project, open your terminal and run:
 I would suggest setting up your coding project **before** initializing github
 
 
-
-
-
 **.gitignore**
 
 Locate the .gitignore file in your directory, open it, and ensure it includes the following entries:
