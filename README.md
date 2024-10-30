@@ -4,7 +4,7 @@
 
 ## Notes
 
-Anything that is surrounded by <> is meant to be replace with your own writing, the <> should BE **omited**
+Anything that is surrounded by <> is meant to be replace with your own writing, the <> should be **omited**
 
 **EX:** 
 
