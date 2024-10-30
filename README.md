@@ -211,10 +211,13 @@ To force a branch merge, follow these steps carefully, as this can potentially o
 This approach is to forcefully merge the changes from one branch into another locally, resolving conflicts by preferring one branch over the other.
 
 **Checkout the target branch:**
+
 ``git checkout main``
 
 **Back up main branch incase everything goes wrong**
+
 ``git checkout -b <branch-backup-name>``
+
 *this will switch you to the backup branch*
 
 ***BACK UP MAIN BRANCH TO GITHUB BEFORE CONTINUING***
