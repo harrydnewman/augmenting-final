@@ -259,8 +259,6 @@ Always communicate with your team before forcing a merge to avoid confusion or d
 
 **Once youve merged a branch successfully and everything is running as expected, feel free to delete the old branch to keep your working space clean and organized**
 
+if you run ``git branch`` and the branch is still showing up, run:
 
-
-
-
-bruh bruh bruh briuh bruhhh
+``git branch -D <branch-name>`` to delete the branch.
