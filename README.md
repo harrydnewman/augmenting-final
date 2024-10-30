@@ -2,16 +2,118 @@
 
 # Git Instructions
 
-### setting up a new project
+## Notes
+
+Anything that is surrounded by <> is meant to be replace with your own writing, the <> should BE **omited**
+
+**EX:** 
+
+``git clone https://github.com/<owners-username>/<project-name>.git``
+
+should end up looking something like:
+
+``git clone https://github.com/harrydnewman/augmenting-final.git``
+
+### New project
+
+To create a new github project, open your terminal and run:
+
 ``git init``
 
-### setting up a new project on git
+I would suggest setting up your coding project **before** initializing github
 
-### Cloning a Repo
+**.gitignore**
 
+Locate the .gitignore file in your directory, open it, and ensure it includes the following entries:
 
-### adding a remote
-<!-- explain the remote -->
+``node_modules
+.DS_Store``
+
+*Note:** If you don't see a .gitignore file, simply create a new file, name it .gitignore and add the above to the file.
+
+Then create a file named **README.md**
+
+open the file and type:
+
+``# <Project Name>``
+
+### Setting up a new project on github.com
+
+Initializing the project will create a *local repository* (also called repo), to connect the repo to github.com to allow you and your partner to collaborate, follow these steps.
+
+navigate to github.com, log into your account and visit your repositories page. 
+
+Create a new repository with the following settings:
+
+``**Name:** <project-name>
+**Description:** whatever you want, totally optional
+**Visibility** public (just to make your life easier)
+**Add a README file:** NO (DO NOT CHECK THE BOX)
+**Add .gitignore:** NO (.gitignore template: None)
+**License:** None``
+
+**Note:** 
+These settings change based on what types of projects/coding languages you're working with. However, when working with Vite the .gitignore file is already created for you, which is why we leave these fields blank (also its more steps if you check these boxes lol)
+
+If you've followed these steps correctly, you should see a page that says **Quick setup — if you’ve done this kind of thing before**
+
+### Adding a remote
+
+**A GitHub remote is a link to a repository hosted on GitHub, allowing you to push and pull code changes between your local and remote repositories.**
+
+After setting up your project on github, reopen your terminal and type:
+
+``git remote add origin https://github.com/<your-username>/<your-repository-name>.git``
+
+To double check that the remote has been set up properly:
+
+``git remote -v``
+
+If **NOTHING** prints, the remote has **NOT** been set up correctly
+
+expected output should look something like this:
+
+``origin  https://github.com/harrydnewman/augmenting-final.git (fetch)
+origin  https://github.com/harrydnewman/augmenting-final.git (push)``
+
+**Pushing local repo to remote**
+
+**Note:** This is how I do it but its not the way github instructs you to do it, but it works all the same
+
+``git checkout -b main``
+*switches to the main branch*
+
+``git add .``
+
+``git commit -b "initial commit"``
+
+``git push origin main``
+
+This may take a second, once it's complete, reload your repository on github.com and you should see a copy of your code on the site.
+
+### Collaborating
+
+**Note:** in this section the *owner* is the person who originally set up the repository, it is registered under their account on github.
+
+**THE PROJECT MUST BE PUSHED TO THE REMOTE FOR THIS TO WORK**
+
+**To collaborate:**
+
+The owner should navigate to the repository on github.com, go to settings, collaborator, and invite the person you want to work with. 
+
+Once the person accepts this invite, they should create a new **EMPTY** folder on their machine and run the following.
+
+``git clone https://github.com/<owners-username>/<project-name>.git``
+
+If this is successful, then run:
+
+``cd <project-name>``
+``npm install``
+``npm run dev``
+
+If the website says that its running on local host, you have cloned successfully!
+
+To push/pull changes from you or your collaborators, continue reading the guide.
 
 ### Pulling (Keeping your repo up to date)
 
@@ -33,8 +135,9 @@ You must commit all changes before switching between branches!
 **Tip:**
 If you want to see all your branches, run:
 
-
 ``git branch``
+
+**I would suggest only using the main branch for code that is complete and RUNS PROPERLY, otherwise always work in a different branch to ensure you always have a version that works to go back to**
 
 ### Committing 
 Committing is one of the most important features in GitHub. Commits allow you to back up your code, enabling you to return to a previous version later.
@@ -83,6 +186,7 @@ If working on GitHub, click the Merge button on the PR page.
 **MAKE SURE TO INFORM YOUR TEAMMATES EACH TIME YOU MERGE, YOU ALL MUST CREATE A PULL REQUEST**
 
 **Note:** Make sure to pull the latest changes after merging to keep your local branch up to date.
+
 ``git pull origin <branch>``
 
 **Forcing a merge**
@@ -125,6 +229,7 @@ The ``-s ours`` strategy tells Git to keep the target branch’s (*main*) histor
 Force pushes and reset operations **override** remote history, affecting anyone else pulling from the repository.
 Always communicate with your team before forcing a merge to avoid confusion or data loss.
 
+**Once youve merged a branch successfully and everything is running as expected, feel free to delete the old branch to keep your working space clean and organized**
 
 
 
