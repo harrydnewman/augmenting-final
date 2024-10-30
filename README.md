@@ -242,7 +242,7 @@ This is going to open a weird menu, to keep going hit the ``esc`` key and type:
 
 ``:wq`` and press ``enter`` to save the commit message.
 
-To exit out of this menu, press the ``esc`` key and type ``:q!`` and then press ``enter``
+To exit out of this menu **without saving**, press the ``esc`` key and type ``:q!`` and then press ``enter``
 
 **Push the merged changes to the remote:**
 
