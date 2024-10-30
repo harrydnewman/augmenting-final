@@ -14,36 +14,49 @@
 <!-- explain the remote -->
 
 ### keeping your repo up to date
-*** Before making any changes, first run: ***
+** Before making any changes, first run: **
 ``git pull origin main``
 
 Pulling ensures you’re working with the latest code and reduces the risk of conflicts later when merging.
 
 ### Branching
 Each new feature or change should be done in its **own branch**. To create a new branch and switch to it:
+
 ``git checkout -b <branch-name>``
+
 Branches are usually named after the feature, bug, or task (e.g., feature-login, bugfix-button).
 
 You must commit all changes before switching between branches!
 
+**Tip: **
+If you want to see all your branches, run:
+``git branch``
+
 ### Committing 
 Committing is one of the most important features in GitHub. Commits allow you to back up your code, enabling you to return to a previous version later.
 
-**To Commit: **
+**To Commit:**
+
 Make your changes and stage them with:
+
 ``git add .``
+
 Then, commit the changes with a message:
+
 ``git commit -m "Description of changes"``
 
 **Pushing changes**
+
 Pushing your changes to the **Remote** allows your commits to be backed up online. This will also allow your teammate to see your changes.
 **I suggest pushing each time you commit, but at the very least it should be done when you are done with your work for the day.**
 
-To Commit:
+**To Commit:**
+
 ``git push origin <branch-name>``
 
 ### Pull Requests (PR)
-On github.com, navigate to the repository, and you’ll see an option to create a Pull Request for your branch.
+
+On github.com, navigate to your repository, and you’ll see an option to create a Pull Request for your branch.
 
 PRs let you and your teammate review the code changes before merging them into the main branch.
 
@@ -52,6 +65,7 @@ The other person can comment on, review, or even add commits to your branch if c
 ### Merging
 
 **Forcing a merge**
+
 Sometimes when attempting a merge on github.com for one reason or another it wont allow you to merge two branches.
 
 This is when you might want to **force** a branch merge. This approach is often used to make one branch identical to another. 
