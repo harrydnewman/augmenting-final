@@ -1,10 +1,10 @@
-h1 {
-    color: green;
-}
+/* home module css */
 
 .chatDiv {
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    justify-content: center;
     
 }
 
@@ -12,3 +12,12 @@ h1 {
     width: 50%;
     gap: 10px;
 }
+
+.nextButtonDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Make sure this div takes up full width */
+    margin-top: 20px; /* Optional: Add space above the button if needed */
+}
+

@@ -1,0 +1,16 @@
+/* enter button module css */
+.enterButtonDiv {
+    border-radius: 20px;
+    background-color: lightblue;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    margin: 0 auto; /* Center the button if it has set width */
+}
+
+.enterButtonDiv h5 {
+    padding: 7px;
+    margin: 0; /* Ensure no default margin */
+}
