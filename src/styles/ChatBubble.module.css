@@ -1,0 +1,11 @@
+.ChatBubbleDiv {
+    background-color: #e5e5ea;
+    display: inline-flex; /* Keeps bubble width to text size */
+    padding: 8px 4px; 
+    border-radius: 10px;
+    max-width: fit-content; /* Ensures it only takes up as much space as needed */
+    margin: 0; /* Removes extra margins that might expand it */
+    max-height: fit-content;
+    margin-top: 20px;
+    margin-left: 5px;
+}

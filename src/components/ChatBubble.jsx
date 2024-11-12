@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import styles from '../styles/ChatBubble.module.css'
 
-export default function ChatBubble(){
+export default function ChatBubble({text}){
     return (
-        <div>
-            <h1>Chat Bubble</h1>
+        <div className={styles.ChatBubbleDiv}>
+            <p>{text}</p>
         </div>
     )
 }
