@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 
 export default function Home() {
     const [shownComponents, setShownComponents] = useState(1);
+    const [visible, setVisible] = useState(false)
 
     const components = [
         <LoadingBubble key="loading1" duration={1000} />,
@@ -30,25 +31,39 @@ export default function Home() {
             setShownComponents(4);
         }, 5500);
 
+        const timer4 = setTimeout(() => {
+            setVisible(true)
+        }, 7000);
+
         // Clear timeouts if the component unmounts
         return () => {
             clearTimeout(timer1);
             clearTimeout(timer2);
             clearTimeout(timer3);
+            clearTimeout(timer4)
         };
     }, []); // Empty dependency array to run only on initial render
-    
-    return (
-        <div className={styles.chatDiv}>
-            {/* <div className={styles.grayChatDiv}>
-                {components.slice(0, shownComponents).map((component, index) => (
-                    <div key={index}>{component}</div>
-                ))}
-            </div> */}
-            <div className={styles.nextButtonDiv}>
-                <EnterButton />
+
+    return visible ?
+        (
+            <div className={styles.chatDiv}>
+                <div className={styles.grayChatDiv}>
+                    {components.slice(0, shownComponents).map((component, index) => (
+                        <div key={index}>{component}</div>
+                    ))}
+                </div>
+                <div className={styles.nextButtonDiv}>
+                    <EnterButton />
+                </div>
             </div>
-        </div>
-       
-    );
+        ) : (
+            <div className={styles.chatDiv}>
+                <div className={styles.grayChatDiv}>
+                    {components.slice(0, shownComponents).map((component, index) => (
+                        <div key={index}>{component}</div>
+                    ))}
+                </div>
+            </div>
+
+        )
 }

@@ -7,10 +7,13 @@
     align-items: center;
     justify-content: center;
     padding: 0 20px;
+    text-decoration: none;
     margin: 0 auto; /* Center the button if it has set width */
 }
 
-.enterButtonDiv h5 {
+.enterButtonDiv p {
     padding: 7px;
     margin: 0; /* Ensure no default margin */
+    text-decoration: none;
+    color: black;
 }
