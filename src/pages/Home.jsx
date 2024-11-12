@@ -37,18 +37,15 @@ export default function Home() {
             clearTimeout(timer3);
         };
     }, []); // Empty dependency array to run only on initial render
-    
+
     return (
         <div className={styles.chatDiv}>
-            {/* <div className={styles.grayChatDiv}>
-                {components.slice(0, shownComponents).map((component, index) => (
-                    <div key={index}>{component}</div>
-                ))}
-            </div> */}
+        <h1>Hi</h1>
             <div className={styles.nextButtonDiv}>
                 <EnterButton />
             </div>
         </div>
-       
+
+
     );
 }
