@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import Graph from './pages/Graph';
 import BotFillerPage from './pages/BotFillerPage';
 import About from './pages/About';
+import Compare from './pages/Compare';
 function App() {
   return (
     <div className="App">
@@ -10,6 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path='/about' element={<About/>}/>
+          <Route path='/compare' element={<Compare/>}/>
           <Route path='/graph' element={<Graph/>}/>
           <Route path='/test' element={<BotFillerPage/>}/>
         </Routes>

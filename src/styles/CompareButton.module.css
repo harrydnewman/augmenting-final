@@ -1,0 +1,16 @@
+.CompareButton {
+    background-color: #FFFFFF;
+    /* border: 1px solid black; */
+    border-radius: 8px;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.CompareButton h5 {
+    font-size: 15px;
+    margin: 0;
+    margin-left: 5%;
+}
