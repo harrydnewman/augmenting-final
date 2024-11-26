@@ -2,7 +2,7 @@ import styles from '../styles/About.module.css'
 
 export default function About() {
     return (
-        <div>
+        <div className={styles.AboutPage}>
             <div className={styles.AboutHeader}>
                 <h1>Chat 💬</h1>
                 <h1>Technology</h1>
