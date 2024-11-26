@@ -1,0 +1,19 @@
+.mainDiv {
+    /* max-width: 100%; */
+    display: flex;
+    flex-direction: row;
+    max-height: 100%;
+   
+}
+
+.image {
+    -webkit-transform: scaleX(-1); /*this flips the image, remove in final version */
+    transform: scaleX(-1);/*this flips the image, remove in final version */
+    max-height: 100%;
+    width: 50%;
+}
+
+.text {
+    width: 50%;
+}
+
