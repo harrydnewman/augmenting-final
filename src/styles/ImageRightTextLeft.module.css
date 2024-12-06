@@ -1,19 +1,25 @@
 .mainDiv {
-    /* max-width: 100%; */
     display: flex;
     flex-direction: row;
     max-height: 100%;
+    padding: 3%;
    
 }
 
 .image {
-    -webkit-transform: scaleX(-1); /*this flips the image, remove in final version */
-    transform: scaleX(-1);/*this flips the image, remove in final version */
-    max-height: 100%;
-    width: 50%;
+    max-height: 50%;
+    max-width: 40%;
+    padding-left: 3%;
 }
 
+.image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensures the image maintains its aspect ratio */
+}
+
+
 .text {
-    width: 50%;
+    max-width: 60%;
 }
 
