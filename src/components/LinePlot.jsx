@@ -2,17 +2,13 @@ import React, { useEffect, useRef } from "react";
 import * as d3 from "d3";
 import { useNavigate } from "react-router-dom";
 
-const ScatterPlot = () => {
+const ScatterPlot = ({data, zeroText, xText, yText}) => {
   const svgRef = useRef();
   const navigate = useNavigate(); // React Router navigate function
 
   useEffect(() => {
     // Data for the scatterplot with emoji icons
-    const data = [
-      { x: 10, y: 20, label: "A", link: "/information", icon: "🗿" },
-      { x: 40, y: 90, label: "B", link: null, icon: "🎭" },
-      { x: 80, y: 50, label: "C", link: null, icon: "💀" },
-    ];
+    {data}
 
     // Set up dimensions
     const width = 300;
@@ -46,7 +42,7 @@ const ScatterPlot = () => {
 
     // Add custom labels for X-axis
     const xTicks = [margin.left, width / 2, width - margin.right];
-    const xLabels = ["Getting Lower", "At Rest", ""];
+    const xLabels = [`${zeroText}`, "", `${xText}`];
 
     xTicks.forEach((tick, index) => {
       svg
@@ -64,18 +60,17 @@ const ScatterPlot = () => {
       .attr("transform", `translate(${margin.left}, 0)`)
       .call(d3.axisLeft(yScale).tickFormat(() => "").tickSizeOuter(0)); // Keep axis lines but hide ticks
 
-    // Add custom labels for Y-axis (rotated 90 degrees)
+    // Add custom labels for Y-axis
     const yTicks = [height - margin.bottom, height / 2, margin.top];
-    const yLabels = ["", "At Rest", "Getting Higher"];
+    const yLabels = ["", "", `${yText}`];
 
     yTicks.forEach((tick, index) => {
       svg
         .append("text")
-        .attr("x", margin.left - 30) // Adjust positioning for rotation
+        .attr("x", margin.left + 45)
         .attr("y", tick)
-        .attr("text-anchor", "middle")
+        .attr("text-anchor", "end")
         .attr("alignment-baseline", "middle")
-        .attr("transform", `rotate(-90, ${margin.left - 30}, ${tick})`) // Rotate text
         .text(yLabels[index])
         .attr("font-size", "12px");
     });
