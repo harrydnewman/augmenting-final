@@ -1,0 +1,19 @@
+.infoTitleDiv {
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+}
+
+.arrowDiv{
+    padding-right: 5%;
+
+}
+
+.arrowDiv a {
+    text-decoration: none;
+    color: black;
+}
+
+.textDiv {
+    max-width: 80%;
+}

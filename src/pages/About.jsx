@@ -1,8 +1,11 @@
 import styles from '../styles/About.module.css'
+import Navbar from '../components/NavBar'
+
 
 export default function About() {
     return (
         <div className={styles.AboutPage}>
+        <Navbar currentPage={"About"}/>
             <div className={styles.AboutHeader}>
                 <h1>Chat 💬</h1>
                 <h1>Technology</h1>

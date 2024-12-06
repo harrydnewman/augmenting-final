@@ -9,7 +9,7 @@
 .image {
     max-height: 50%;
     max-width: 40%;
-    padding-left: 3%;
+    /* padding-left: 3%; */
 }
 
 .image img {
@@ -21,5 +21,7 @@
 
 .text {
     max-width: 60%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
