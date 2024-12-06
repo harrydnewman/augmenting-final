@@ -1,6 +1,10 @@
 .Navbar {
     background-color: purple;
     /* padding-top: 0; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .Navbar h1 {
@@ -121,8 +125,21 @@
   }
   
   
+  .otherOptions {
+    height: 48px;
+    width: 76px;
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    margin: 10px;
+  }
   
-  
+  .otherOptions p {
+    font-size: 1.5rem;
+    
+  }
   
   
   
