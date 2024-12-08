@@ -13,11 +13,14 @@ background: radial-gradient(circle, rgba(157,84,185,1) 0%, rgba(255,235,153,1) 5
 }
 
 .compareButtonDiv {
-    display: grid;
+    display: grid; 
     grid-template-columns: 1fr 1fr; /* Two columns of equal width */
     grid-template-rows: 1fr 1fr;   /* Two rows of equal height */
     gap: 8px; /* Optional: space between grid items */
     width: 100%; /* Adjust as needed */
     height: 12%; /* Adjust as needed */
     padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    
 }

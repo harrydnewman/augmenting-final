@@ -1,6 +1,6 @@
 import ScatterPlot from "../components/LinePlot";
 
-export default function Graph() {
+export default function GraphTest() {
   const data = [
     { x: 10, y: 20, label: "A", link: "/information", icon: "🗿" },
     { x: 40, y: 90, label: "B", link: null, icon: "🎭" },

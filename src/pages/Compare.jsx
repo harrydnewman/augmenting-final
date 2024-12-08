@@ -1,5 +1,7 @@
 import styles from '../styles/Compare.module.css'
 import CompareButton from '../components/CompareButton'
+import Graph from '../components/Graph'
+
 
 export default function Compare(){
     return (
@@ -13,6 +15,7 @@ export default function Compare(){
             <CompareButton emoji={"🏓"} text={"two-way"}/>
             <CompareButton emoji={"🎭"} text={"personality"}/>
         </div>
+        <Graph title={"Speed"} subtitle={"the instantaneousness of our communication"} blurb={"Changes how much time it takes to reach us & how long we can think about the conversation"}/>
             {/* on click the return button needs to actually do something, but leave it for now */}
         </div>
     )

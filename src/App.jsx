@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
-import Graph from './pages/Graph';
+import GraphTest from './pages/GraphTest';
 import BotFillerPage from './pages/BotFillerPage';
 import About from './pages/About';
 import Compare from './pages/Compare';
@@ -15,7 +15,7 @@ function App() {
           <Route path='/about' element={<About/>}/>
           <Route path='/compare' element={<Compare/>}/>
           <Route path='/information' element={<InformationPage/>}/>
-          <Route path='/graph' element={<Graph/>}/>
+          <Route path='/graphtest' element={<GraphTest/>}/>
           <Route path='/test' element={<BotFillerPage/>}/>
         </Routes>
       </Router>
