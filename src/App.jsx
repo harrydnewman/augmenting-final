@@ -8,6 +8,9 @@ import InformationPage from './pages/InformationPage';
 import Letters from './pages/ArtifactPages/Letters';
 import Graffiti from './pages/ArtifactPages/Graffiti';
 import PrivateMessaging from './pages/ArtifactPages/PrivateMessaging';
+import PublicThreads from './pages/ArtifactPages/PublicThreads';
+import AIChats from './pages/ArtifactPages/AIChats';
+
 
 function App() {
   return (
@@ -23,6 +26,8 @@ function App() {
           <Route path='/artifacts/letters' element={<Letters />} />
           <Route path='/artifacts/graffiti' element={<Graffiti />} />
           <Route path='/artifacts/privatemessaging' element={<PrivateMessaging />} />
+          <Route path='/artifacts/publicthreads' element={<PublicThreads />} />
+          <Route path='/artifacts/aichats' element={<AIChats />} />
         </Routes>
       </Router>
     </div>

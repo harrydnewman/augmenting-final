@@ -7,7 +7,7 @@ import PrivateImage1 from '../../assets/images/privateimage1.png'
 import PrivateImage2 from '../../assets/images/privateimage2.png'
 import PrivateImage3 from '../../assets/images/privateimage3.png'
 import PrivateImage4 from '../../assets/images/privateimage4.png'
-import About from "../About"
+
 export default function PrivateMessaging(){
     return (
         <div>
