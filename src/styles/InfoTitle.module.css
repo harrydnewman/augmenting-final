@@ -1,13 +1,14 @@
 .infoTitleDiv {
     display: flex;
     flex-direction: row;
-    padding: 5%;
+    padding: 2%;
     justify-content: center;
     align-content: center;
+    width: 100%;
 }
 
 .arrowDiv{
-    padding-right: 5%;
+    padding-right: 1%;
 
 }
 
