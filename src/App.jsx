@@ -7,7 +7,7 @@ import Compare from './pages/Compare';
 import InformationPage from './pages/InformationPage';
 import Letters from './pages/ArtifactPages/Letters';
 import Graffiti from './pages/ArtifactPages/Graffiti';
-
+import PrivateMessaging from './pages/ArtifactPages/PrivateMessaging';
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
           <Route path='/test' element={<BotFillerPage/>}/>
           <Route path='/artifacts/letters' element={<Letters />} />
           <Route path='/artifacts/graffiti' element={<Graffiti />} />
+          <Route path='/artifacts/privatemessaging' element={<PrivateMessaging />} />
         </Routes>
       </Router>
     </div>
