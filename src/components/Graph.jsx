@@ -1,5 +1,5 @@
 import styles from '../styles/Graph.module.css'
-import ScatterPlot from './LinePlot'
+import ScatterPlot from './ScatterPlot'
 export default function Graph({title, subtitle, blurb, data, xText, yText, zeroText}){
     return (
         <div className={styles.GraphDiv}>
