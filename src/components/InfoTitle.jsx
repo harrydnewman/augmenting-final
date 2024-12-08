@@ -8,7 +8,7 @@ export default function InfoTitle({title, backLink}){
                 <a href={backLink}><h1>←</h1></a>
             </div>
             <div className={styles.textDiv}>
-            <h2>{title}</h2>
+            <h1>{title}</h1>
             </div>
            
         </div>

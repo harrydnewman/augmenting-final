@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: row;
     padding: 5%;
+    justify-content: center;
+    align-content: center;
 }
 
 .arrowDiv{
@@ -12,8 +14,26 @@
 .arrowDiv a {
     text-decoration: none;
     color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.arrowDiv h1 {
+    padding: 0;
+    margin: 0;
 }
 
 .textDiv {
     max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textDiv h1 {
+    border-bottom: none !important;
+    padding-bottom: none !important;
+    padding: 0;
+    margin: 0;
 }

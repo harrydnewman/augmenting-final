@@ -5,6 +5,7 @@ import BotFillerPage from './pages/BotFillerPage';
 import About from './pages/About';
 import Compare from './pages/Compare';
 import InformationPage from './pages/InformationPage';
+import Letters from './pages/ArtifactPages/Letters';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/information' element={<InformationPage/>}/>
           <Route path='/graphtest' element={<GraphTest/>}/>
           <Route path='/test' element={<BotFillerPage/>}/>
+          <Route path='/artifacts/letters' element={<Letters />} />
         </Routes>
       </Router>
     </div>
