@@ -6,6 +6,8 @@ import About from './pages/About';
 import Compare from './pages/Compare';
 import InformationPage from './pages/InformationPage';
 import Letters from './pages/ArtifactPages/Letters';
+import Graffiti from './pages/ArtifactPages/Graffiti';
+
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
           <Route path='/graphtest' element={<GraphTest/>}/>
           <Route path='/test' element={<BotFillerPage/>}/>
           <Route path='/artifacts/letters' element={<Letters />} />
+          <Route path='/artifacts/graffiti' element={<Graffiti />} />
         </Routes>
       </Router>
     </div>
