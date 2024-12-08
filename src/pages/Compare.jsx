@@ -4,9 +4,11 @@ import Graph from '../components/Graph'
 
 export default function Compare(){
     const data = [
-        { x: 10, y: 20, label: "A", link: "/information", icon: "🗿" },
-        { x: 40, y: 90, label: "B", link: null, icon: "🎭" },
-        { x: 80, y: 50, label: "C", link: null, icon: "💀" },
+        { x: 90, y: 95, label: "A", link: "/information", icon: "🤖" },
+        { x: 50, y: 80, label: "B", link: null, icon: "📧" },
+        { x: 5, y: 10, label: "C", link: null, icon: "📝" },
+        { x: 80, y: 50, label: "D", link: "/information", icon: "💬👥👥" },
+        { x: 20, y: 40, label: "E", link: null, icon: "🗿🖊️" },
       ];
     return (
         <div className={styles.ComparePage}>

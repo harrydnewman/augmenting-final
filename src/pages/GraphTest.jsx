@@ -1,4 +1,4 @@
-import ScatterPlot from "../components/LinePlot";
+import ScatterPlot from "../components/ScatterPlot";
 
 export default function GraphTest() {
   const data = [
