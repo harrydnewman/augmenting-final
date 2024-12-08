@@ -10,6 +10,7 @@ import Graffiti from './pages/ArtifactPages/Graffiti';
 import PrivateMessaging from './pages/ArtifactPages/PrivateMessaging';
 import PublicThreads from './pages/ArtifactPages/PublicThreads';
 import AIChats from './pages/ArtifactPages/AIChats';
+import CodeInChat from './pages/CodeInChat';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path='/artifacts/privatemessaging' element={<PrivateMessaging />} />
           <Route path='/artifacts/publicthreads' element={<PublicThreads />} />
           <Route path='/artifacts/aichats' element={<AIChats />} />
+          <Route path='/codeinchat' element={<CodeInChat/>}/>
         </Routes>
       </Router>
     </div>
