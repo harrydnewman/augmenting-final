@@ -32,7 +32,7 @@ function App() {
           <Route path='/codeinchat' element={<CodeInChat/>}/>
           <Route path='/future' element={<Future/>}/>
         </Routes>
-      </Router>
+      </Router> 
     </div>
   );
 }
