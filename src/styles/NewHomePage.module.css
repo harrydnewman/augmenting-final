@@ -26,6 +26,8 @@
     padding: 0.5rem 1.5rem; 
     
   } */
+
+
   
   .imessage p {
     border-radius: 1.15rem;
@@ -48,6 +50,7 @@
   
   p.fromMe {
     /* align-self: flex-end; */
+    margin-left: auto;
     background-color: #248bf5;
     color: #fff; 
     /* margin-left: auto; */
@@ -90,6 +93,8 @@
     align-items: flex-start;
     background-color: #e5e5ea;
     color: #000;
+    margin-bottom: 3px;
+    margin-top: 3px;
   }
   
   p.fromThem:before {

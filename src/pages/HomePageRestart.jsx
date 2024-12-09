@@ -7,15 +7,11 @@ export default function HomePageRestart(){
     return (
         <div className={styles.HomePageDiv}>
         <div className={styles.MessageDiv}>
-
-     
-            {/* <h1>Home Page Restart</h1> */}
-{/* 
             <IncomingBubble text={"Hi!"}/>
-            <IncomingBubble text={"..."}/> */}
-            <OutgoingBubble text={"Um.. Who is this?"}/>
-            <IncomingBubble text={"Welcome to the history of the written chat!"}/>
-            {/* <IncomingBubble text={"^^ A digital exhibition of our evolved mode of chatting via writing and those impacts..."}/>
+            <IncomingBubble text={"..."}/> 
+            <OutgoingBubble text={"Um.. Who is this?"}/>  
+            <IncomingBubble text={"Welcome to the history of the written chat!"}/> 
+            <IncomingBubble text={"^^ A digital exhibition of our evolved mode of chatting via writing and those impacts..."}/>
             <OutgoingBubble text={"chat as in like.. these texts?"}/>
             <IncomingBubble text={"Exactly! Chat - a back and forth conversation."}/>
             <OutgoingBubble text={"gotcha"}/>
@@ -23,9 +19,9 @@ export default function HomePageRestart(){
             <IncomingBubble text={"What sometimes gets lost in translation? How have we managed to come up with ways to make personality in text?"}/>
             <IncomingBubble text={"And take a dive into the peculiars of “chat personalities”..."}/>
             <OutgoingBubble text={"interesting!"}/>
-            <IncomingBubble text={"Lets get to it.. 👉"}/> */}
+            <IncomingBubble text={"Lets get to it.. 👉"}/> 
             
-            </div>
+            </div> 
           
 
             {/* create incoming chat bubble */}
