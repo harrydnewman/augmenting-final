@@ -1,9 +1,9 @@
 import styles from '../../styles/NewHomePage.module.css'
-
-export default function OutgoingBubble(){
+// look at home message bubble for styling stuff!!!
+export default function OutgoingBubble({text}){
     return (
         <div>
-            <h1>IncomingBubble</h1>
+            <p>{text}</p>
         </div>
     )
 }

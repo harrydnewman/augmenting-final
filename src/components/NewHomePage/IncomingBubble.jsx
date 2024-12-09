@@ -1,9 +1,9 @@
 import styles from '../../styles/NewHomePage.module.css'
 
-export default function IncomingBubble(){
+export default function IncomingBubble({text}){
     return (
         <div>
-            <h1>IncomingBubble</h1>
+            <p>{text}</p>
         </div>
     )
 }
