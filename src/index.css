@@ -16,6 +16,10 @@ code {
     monospace;
 }
 
+:root {
+  --navbar-background-color: purple;
+}
+
 *,
 *:after,
 *:before {
