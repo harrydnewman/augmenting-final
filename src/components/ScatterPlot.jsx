@@ -36,12 +36,14 @@ const ScatterPlot = ({data, zeroText, xText, yText}) => {
     // Create scales
     const xScale = d3
       .scaleLinear()
-      .domain([0, d3.max(data, (d) => d.x) + 10])
+      // .domain([0, d3.max(data, (d) => d.x) + 10])
+      .domain([0,100])
       .range([margin.left, width - margin.right]);
   
     const yScale = d3
       .scaleLinear()
-      .domain([0, d3.max(data, (d) => d.y) + 10])
+      // .domain([0, d3.max(data, (d) => d.y) + 10])
+      .domain([0,100])
       .range([height - margin.bottom, margin.top]);
   
     // Add X axis line with arrowhead
@@ -71,9 +73,9 @@ const ScatterPlot = ({data, zeroText, xText, yText}) => {
     xTicks.forEach((tick, index) => {
       svg
         .append("text")
-        .attr("x", tick + 5)
+        .attr("x", tick - 30)
         .attr("y", height - margin.bottom + 20)
-        .attr("text-anchor", "middle")
+        .attr("text-anchor", "start")
         .text(xLabels[index])
         .attr("font-size", "18px");
     });
@@ -85,10 +87,10 @@ const ScatterPlot = ({data, zeroText, xText, yText}) => {
     yTicks.forEach((tick, index) => {
       svg
         .append("text")
-        .attr("x", margin.left + 35)
+        .attr("x", margin.left - 20)
         .attr("y", tick)
-        .attr("text-anchor", "end")
-        .attr("alignment-baseline", "middle")
+        .attr("text-anchor", "start")
+        .attr("alignment-baseline", "start")
         .text(yLabels[index])
         .attr("font-size", "18px");
     });
@@ -102,7 +104,7 @@ const ScatterPlot = ({data, zeroText, xText, yText}) => {
       .attr("x", (d) => xScale(d.x))
       .attr("y", (d) => yScale(d.y))
       .text((d) => d.icon)
-      .attr("font-size", "40px")
+      .attr("font-size", "30px")
       .attr("text-anchor", "middle")
       .attr("alignment-baseline", "middle")
       .style("cursor", (d) => (d.link ? "pointer" : "default"))

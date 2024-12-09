@@ -9,6 +9,10 @@
     justify-content: center;
 }
 
+.CompareButton:hover {
+    cursor: pointer;
+}
+
 .CompareButton h5 {
     font-size: 15px;
     margin: 0;
