@@ -1,0 +1,56 @@
+
+
+.PersonalityBubbleDiv {
+    /* color: green; */
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.MessageAndTextGray {
+    /* background-color: pink; */
+    width: 76%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-bottom: 0px;
+}
+
+.MessageAndTextGray p {
+    padding: 0;
+    margin: 0;
+    font-size: 19px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    text-align: right;
+}
+
+.MessageAndTextGray img {
+    object-fit: contain;
+    /* background-color: green; */
+    max-width: 100%;
+    padding-top: 0px;
+}
+
+.MessageAndTextBlue {
+    /* background-color: pink; */
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.MessageAndTextBlue p {
+    padding: 0;
+    margin: 0;
+    font-size: 19px;
+    padding-left: 20px;
+}
+
+.MessageAndTextBlue img {
+    object-fit: contain;
+    /* background-color: green; */
+    max-width: 95%;
+}

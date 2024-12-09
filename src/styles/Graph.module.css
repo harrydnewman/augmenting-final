@@ -1,0 +1,14 @@
+.GraphDiv {
+    background-color: rgb(173,173,173);
+    margin: 2%;
+    padding: 3%;
+    border-radius: 15px;
+}
+
+.GraphDiv h2{
+    color: blue;
+    border-bottom: none !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 0px !important;
+}
+
