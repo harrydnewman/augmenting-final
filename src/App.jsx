@@ -12,6 +12,8 @@ import PublicThreads from './pages/ArtifactPages/PublicThreads';
 import AIChats from './pages/ArtifactPages/AIChats';
 import CodeInChat from './pages/CodeInChat';
 import Future from './pages/Future';
+import HomePageRestart from './pages/HomePageRestart';
+
 
 function App() {
   return (
@@ -31,6 +33,7 @@ function App() {
           <Route path='/artifacts/aichats' element={<AIChats />} />
           <Route path='/codeinchat' element={<CodeInChat/>}/>
           <Route path='/future' element={<Future/>}/>
+          <Route path='/homepage' element={<HomePageRestart/>}/>
         </Routes>
       </Router> 
     </div>
