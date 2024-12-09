@@ -5,13 +5,18 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-left: 10%;
-  padding-right: 10%;
+  /* padding-left: 7%;
+  padding-right: 7%; */
   width: 100%;
 }
 
 .Navbar h1 {
   margin-top: 0;
+}
+
+.Navbar a {
+  text-decoration: none;
+  color: black;
 }
 
 .unselectedButton p {
@@ -47,23 +52,25 @@
 
 p.fromThem {
   align-items: flex-start;
-  background-color: #e5e5ea;
+  background-color: #d1d1d4;
   color: #000;
 }
 
 p.fromThem:before {
   border-bottom-right-radius: 0.8rem 0.7rem;
-  border-left: 1.45rem solid #e5e5ea;
+  border-left: 1.31rem solid #d1d1d4;
+  /* border-left: 1.31rem solid #1414e1; */
   left: -0.3rem;
   transform: translate(0, -0.1rem);
 }
 
 p.fromThem::after {
   background-color: var(--navbar-background-color);
+  /* background-color: green; */
   border-bottom-right-radius: 0.5rem;
   left: 20px;
-  transform: translate(-30px, -2px);
-  width: 10px;
+  transform: translate(-25px, -2px);
+  width: 5.15px;
 }
 
 

@@ -1,7 +1,7 @@
 import styles from '../styles/Compare.module.css'
 import CompareButton from '../components/CompareButton'
 import Graph from '../components/Graph'
-
+import Navbar from '../components/NavBar';
 export default function Compare(){
     const data = [
         { x: 90, y: 95, label: "A", link: "/information", icon: "🤖" },
@@ -12,6 +12,7 @@ export default function Compare(){
       ];
     return (
         <div className={styles.ComparePage}>
+        <Navbar currentPage={"/compare"}/>
         <div className={styles.CompareTitleDiv}>
         <h1>Compare over time 📈:</h1>
         </div>

@@ -4,10 +4,15 @@ import FutureImage1 from '../assets/images/future1.png'
 import FutureImage2 from '../assets/images/future2.png'
 import FutureImage3 from '../assets/images/future3.png'
 import ImageRightTextLeft from '../components/ImageRightTextLeft'
+import Navbar from '../components/NavBar'
 
 export default function Future(){
     return (
+        <div className={styles.futurePageDiv}>
+
+<Navbar currentPage={'/future'}/>
         <div className={styles.futureDiv}>
+            
             <h2 className={styles.title}><i>The Future of Chatting</i></h2>
             <p>To try and predict the future, based on looking on the past evolution of the chat: </p>
             <p>Continuing adopting AI chatbots for various more <u>specific</u> uses.</p>
@@ -19,6 +24,7 @@ export default function Future(){
             <img src={FutureImage3}/>
             <p>Perhaps the next will be “squashing” or “flicking” away your friends text, and perhaps in a AR interface!</p>
             <p>And maybe we will have devices like the Apple Vision Pro that allow capture us “air drawing”, and we will go back to writing letters and notes.</p>
+        </div>
         </div>
     )
 }
