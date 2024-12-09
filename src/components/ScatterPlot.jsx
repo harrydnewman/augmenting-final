@@ -7,6 +7,8 @@ const ScatterPlot = ({data, zeroText, xText, yText}) => {
   const navigate = useNavigate(); // React Router navigate function
 
   useEffect(() => {
+    d3.select(svgRef.current).selectAll("*").remove();
+
     const width = 300;
     const height = 300;
     const margin = { top: 20, right: 20, bottom: 40, left: 40 };
@@ -113,7 +115,7 @@ const ScatterPlot = ({data, zeroText, xText, yText}) => {
           navigate(d.link);
         }
       });
-  }, [navigate]);
+  }, [data, navigate, zeroText, xText, yText]);
   
 
   return <svg ref={svgRef}></svg>;
